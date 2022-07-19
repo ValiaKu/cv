@@ -1,0 +1,198 @@
+:root {
+  --main-bg-color: brown;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f1faee;
+  font-family: "Roboto", Andale Mono;
+  color: #1d3557;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-shadow: 1px 1px 1px #fff;
+  padding: 3rem 10rem;
+}
+strong {
+  font-weight: bold;
+  color: #e63946;
+}
+h1,
+h2 {
+  color: #e63946;
+  font-family: "Major Mono Display", monospace;
+}
+h2 {
+  margin-bottom: 1.6rem;
+  margin-top: 4rem;
+}
+h3 {
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin: 0;
+}
+a {
+  font-weight: bold;
+  /* text-decoration: none;
+  background-color: #a8dadc; */
+  color: #e63946;
+  text-shadow: none;
+}
+a:hover {
+  color: #fff;
+  background-color: #e63946;
+}
+h1 {
+  font-size: 3.6rem;
+}
+hr {
+  border-style: dotted none none;
+
+  border-width: 5px;
+  border-color: #a8dadc;
+  margin: 7rem 0 5rem;
+}
+.cv-intro-wrapper,
+.cv-skill-wrapper {
+  display: grid;
+  grid-template-columns: 200px 80%;
+  grid-template-rows: 65% 25%;
+}
+.cv-intro-wrapper p {
+  max-width: 600px;
+}
+
+p {
+  margin-bottom: 3.2rem;
+}
+img {
+  border: dotted 3px #a8dadc;
+  margin-top: 4rem;
+  width: 150px;
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+.work-table td {
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+.work-table th {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.date-header {
+  width: 200px;
+  text-align: left;
+}
+.work-header {
+  text-align: left;
+}
+.company-desc {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0px;
+  display: block;
+  color: #81afb1;
+  margin-bottom: 0.7rem;
+}
+.job-desc {
+  display: block;
+
+  font-size: 1.4rem;
+  max-width: 500px;
+}
+
+.skill-category {
+  padding: 5px;
+}
+.cv-skill-wrapper table {
+  border-spacing: 0;
+  width: 70%;
+}
+.cv-skill-wrapper table td {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cv-skill-wrapper table tr:nth-child(2n + 1) td {
+  background-color: #a8dadc;
+}
+.cv-skill-wrapper table td + td {
+  text-align: right;
+  vertical-align: top;
+}
+ul.cv-design-wrapper {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.cv-design-wrapper img {
+  border-radius: 0;
+  background-color: white;
+  padding: 5px;
+  margin: 0 0 30px 0;
+}
+ul.cv-design-wrapper .img-circle {
+  border-radius: 50%;
+  height: 100px;
+}
+ul.cv-design-wrapper li {
+  display: flex;
+  width: 250px;
+}
+ul.cv-design-wrapper span {
+  vertical-align: top;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 30px 20px 10px;
+}
+ul.cv-design-wrapper a:hover {
+  background-color: transparent;
+}
+ul.cv-design-wrapper a:hover img {
+  border-color: #e63946;
+}
+.cv-ref-box img {
+  width: 800px;
+  margin: 10px 0;
+}
+.cv-edu-box .company-desc {
+  margin: 0;
+}
+.cv-contacts-box {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 640px) {
+  .cv-intro-wrapper,
+  .cv-skill-wrapper {
+    display: block;
+  }
+  img {
+    margin-top: 0;
+    width: 150px;
+  }
+  .avatar,
+  h1 {
+    text-align: center;
+  }
+  h1 {
+    border-top: dotted 5px #a8dadc;
+    border-bottom: dotted 5px #a8dadc;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .cv-skill-wrapper table {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cv-ref-box img {
+    width: 100%;
+  }
+}
